@@ -1,0 +1,47 @@
+a{
+  text-decoration: none;
+ 
+}
+/* a:hover{
+  background-color: rgb(16, 38, 80);
+  color: white;
+  border-radius: 5px;
+} */
+button:hover{
+  color: white;
+  background-color: rgb(16, 38, 80);
+  border-radius: 5px;
+}
+.form-heading{
+ font-size: large;
+ color: rgb(16, 38, 80);
+ font-weight: 500;
+}
+.form-field{
+  border-radius: 10px;
+  padding: 1rem;
+}
+.input-field{
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.sendMessage-btn{
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 0.5rem;  
+  color: white;
+  background-color: rgb(16, 38, 80);
+  border-radius: 5px;
+}
+.social-accounts{
+  display: flex;
+  gap:1rem;
+ margin-top: 1rem;
+  justify-content: center;
+  color: black;
+
+}
+.svg{
+  color: black;
+}
