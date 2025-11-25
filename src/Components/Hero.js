@@ -170,8 +170,8 @@ export default function Hero({ setActiveSection }) {
           <SecondaryButton
             onClick={() => {
               const link = document.createElement('a');
-              link.href = process.env.PUBLIC_URL + '/Gandikota Kondalarao.pdf';
-              link.download = 'Gandikota Kondalarao.pdf';
+              link.href = process.env.PUBLIC_URL + '/Rao.pdf';
+              link.download = 'Rao.pdf';
               link.click();
             }}
           >
