@@ -5,6 +5,7 @@ import {
   MailOutlined,
   LinkedinOutlined,
   GithubOutlined,
+  WhatsAppOutlined,
   PhoneOutlined,
   EnvironmentOutlined,
 } from '@ant-design/icons';
@@ -401,6 +402,10 @@ export default function Contact() {
           <SocialLink href='mailto:gandikotakondalarao7@gmail.com'>
             <MailOutlined />
           </SocialLink>
+          
+          <SocialLink href='https://wa.me/917036305040'>
+          <WhatsAppOutlined /> 
+            </SocialLink>
         </SocialLinks>
       </Container>
     </ContactSection>
