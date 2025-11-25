@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BookOutlined, TrophyOutlined } from '@ant-design/icons';
+import { BookOutlined } from '@ant-design/icons';
 
 const EducationSection = styled.section`
   padding: 6rem 4rem;
@@ -47,14 +47,6 @@ const ContentWrapper = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`;
-
-const EducationList = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-  gap: 2rem;
 `;
 
 const EducationCard = styled.div`
@@ -108,70 +100,13 @@ const Year = styled.p`
   margin: 0;
 `;
 
-const CertificationsContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-`;
-
-const CertCard = styled.div`
-  padding: 1.5rem;
-  background: rgba(100, 150, 255, 0.05);
-  border: 1px solid rgba(100, 150, 255, 0.1);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: rgba(100, 150, 255, 0.1);
-    transform: translateY(-4px);
-  }
-`;
-
-const CertTitle = styled.h3`
-  font-size: 16px;
-  font-weight: 700;
-  color: #e2e8f0;
-  margin: 0 0 0.5rem 0;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-`;
-
-const CertDescription = styled.p`
-  font-size: 13px;
-  color: #cbd5e1;
-  margin: 0;
-  line-height: 1.6;
-`;
-
-const AchievementsContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
-const AchievementItem = styled.div`
-  padding: 1rem;
-  background: rgba(100, 150, 255, 0.05);
-  border-left: 2px solid #64b5f6;
-  border-radius: 4px;
-`;
-
-const AchievementText = styled.p`
-  font-size: 14px;
-  color: #cbd5e1;
-  margin: 0;
-  line-height: 1.6;
-`;
-
 export default function Education() {
   return (
     <EducationSection>
       <Container>
-        <SectionTitle> Education</SectionTitle>
+        <SectionTitle>Education</SectionTitle>
         <Divider />
         <ContentWrapper>
-          {/* <EducationList> */}
           <EducationCard>
             <CardHeader>
               <IconBox>
@@ -181,12 +116,12 @@ export default function Education() {
                 <Degree>Bachelor of Technology (B.Tech)</Degree>
                 <Institution>Computer Science & Engineering</Institution>
                 <Year>
-                  Pydah Kaushik College of Engineering, Visakhapatnam |
-                  2016–2020
+                  Pydah Kaushik College of Engineering, Visakhapatnam | 2016–2020
                 </Year>
               </CardContent>
             </CardHeader>
           </EducationCard>
+
           <EducationCard>
             <CardHeader>
               <IconBox>
@@ -195,11 +130,12 @@ export default function Education() {
               <CardContent>
                 <Degree>Intermediate (MPC)</Degree>
                 <Institution>Mathematics, Physics, Chemistry</Institution>
-                <Year>Narayana Junior College, Visakhapatnam | 2014–2016</Year>
+                <Year>
+                  Narayana Junior College, Visakhapatnam | 2014–2016
+                </Year>
               </CardContent>
             </CardHeader>
           </EducationCard>
-          {/* </EducationList> */}
         </ContentWrapper>
       </Container>
     </EducationSection>
