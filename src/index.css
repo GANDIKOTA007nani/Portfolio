@@ -1,8 +1,8 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+/* tw-animate-css removed because it breaks PostCSS */
+/* @import "tw-animate-css"; */
 
 @custom-variant dark (&:is(.dark *));
-
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -124,7 +124,6 @@
   }
 }
 
-/* Custom portfolio styling */
 * {
   box-sizing: border-box;
 }
@@ -133,7 +132,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -151,13 +149,11 @@ html {
   background: rgba(100, 150, 255, 0.8);
 }
 
-/* Smooth transitions */
 button,
 a {
   transition: all 0.3s ease;
 }
 
-/* Remove focus outline in favor of custom styling */
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
